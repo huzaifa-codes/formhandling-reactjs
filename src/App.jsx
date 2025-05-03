@@ -79,8 +79,8 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4 md:p-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br  p-4 md:p-8">
+      <div className="max-w-10xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-3xl font-bold text-gray-800">
             <span className="bg-gradient-to-r from-teal-500 to-purple-600 bg-clip-text text-transparent">
@@ -163,8 +163,8 @@ export default function App() {
             </form>
           </div>
           
-          {/* Right Side - Table */}
-          <div className="w-full lg:w-1/2">
+   
+          <div className="w-500">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
               <div className="p-4 border-b border-gray-200 bg-gray-50">
                 <h2 className="text-xl font-semibold text-gray-800">
@@ -189,6 +189,7 @@ export default function App() {
                       <tr>
                         <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
                         <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
+                        <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">password</th>
                         <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phone</th>
                         <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
                       </tr>
@@ -209,7 +210,9 @@ export default function App() {
                             </div>
                           </td>
                           <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-600">{item.uemail}</td>
+                          <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-600">{'*'.repeat(item.upassword.length)}</td>
                           <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-500">{item.unumber}</td>
+
                           <td className="px-4 py-3 whitespace-nowrap text-sm font-medium">
                             <div className="flex space-x-3">
                               <button
